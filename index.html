@@ -3,21 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Othniel CONVAUD · Blog &amp; Portfolio</title>
-  <!-- Google Fonts -->
+  <title>Othniel CONVAUD · Portfolio & Réalisations</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
-  <!-- Font Awesome 6 -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <!-- Swiper.js pour le carousel -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  <!-- Fichier CSS -->
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
 <div id="particles-js"></div>
+
 <!-- Navigation -->
 <nav class="navbar">
   <div class="nav-container">
@@ -166,18 +163,18 @@
         </div>
       </div>
 
-      <!-- Expérience associative (sans @) -->
+      <!-- Expérience associative -->
       <div class="experience-card">
         <h3><i class="fas fa-briefcase"></i> Engagement associatif</h3>
-        
+  
         <div class="experience-item">
           <div class="exp-badge">Vice-Président</div>
-          <p>Contribution à la définition de la vision stratégique de Ghostech en collaboration avec la présidence et les responsables techniques</p>
+          <p class="exp-description">Participation à la définition de la vision stratégique de Ghostech et coordination des activités avec l'équipe technique. Organisation des réunions et suivi des projets.</p>
         </div>
 
         <div class="experience-item">
           <div class="exp-badge">Responsable Partenariat</div>
-          <p>Contribution à la définition de la vision stratégique de Ghostech en collaboration avec la présidence et les responsables techniques</p>
+          <p class="exp-description">Développement et gestion des relations avec les partenaires potentiels. Recherche d'opportunités de collaboration et représentation de l'association lors d'événements.</p>
         </div>
 
         <div class="experience-note">
@@ -190,7 +187,6 @@
 </section>
 
 <!-- Section Compétences avec carousel -->
-<!-- Section Compétences - Nouveau design -->
 <section id="competences" class="section competences-section">
   <div class="container">
     <div class="section-header">
@@ -199,10 +195,10 @@
       <p class="section-description">Des technologies web aux applications mobiles, voici les outils que j'utilise au quotidien.</p>
     </div>
 
-    <!-- Swiper Carousel avec nouveau design -->
+    <!-- Swiper Carousel -->
     <div class="swiper competences-carousel">
       <div class="swiper-wrapper">
-        <!-- Langages de programmation -->
+        <!-- Langages -->
         <div class="swiper-slide">
           <div class="competence-card">
             <div class="card-header">
@@ -234,7 +230,7 @@
           </div>
         </div>
 
-        <!-- Frameworks & Outils -->
+        <!-- Frameworks -->
         <div class="swiper-slide">
           <div class="competence-card">
             <div class="card-header">
@@ -298,7 +294,7 @@
           </div>
         </div>
 
-        <!-- Mobile & Autres -->
+        <!-- Mobile -->
         <div class="swiper-slide">
           <div class="competence-card">
             <div class="card-header">
@@ -347,134 +343,164 @@
   </div>
 </section>
 
-<!-- Section Projets -->
-<section id="projets" class="section">
+<!-- Section Projets - NOUVEAU STYLE -->
+<!-- Section Projets - VERSION CORRIGÉE -->
+<section id="projets" class="section projets-section">
   <div class="container">
     <div class="section-header">
       <span class="section-subtitle">Mes réalisations</span>
       <h2 class="section-title">Projets <span class="gradient-text">récents</span></h2>
+      <div class="header-rule"></div>
+      <p class="section-description">5 projets · 1 événement · design & développement</p>
     </div>
 
-    <!-- Filtres -->
-    <div class="projet-filters">
-      <button class="filter-btn active" data-filter="all">Tous</button>
-      <button class="filter-btn" data-filter="laravel">Laravel</button>
-      <button class="filter-btn" data-filter="react">React</button>
-      <button class="filter-btn" data-filter="flutter">Flutter</button>
-      <button class="filter-btn" data-filter="php">PHP</button>
-    </div>
-
-    <div class="projets-grid">
+    <div class="projets-grid-new">
       <!-- Fast-Flow (Laravel) -->
-      <div class="projet-card card-hover" data-category="laravel">
-        <div class="projet-header">
-          <i class="fab fa-laravel"></i>
-          <span class="projet-category">Laravel 11</span>
+      <div class="projet-card-new" data-category="laravel">
+        <div class="projet-visual">
+          <img src="https://i.pinimg.com/1200x/1a/e1/69/1ae169aad8eb0440156315f355306bcd.jpg" alt="Fast-Flow" loading="lazy">
+          <div class="img-overlay"></div>
         </div>
-        <h3>Fast-Flow</h3>
-        <p>Système complet de gestion de fast-food : commandes en temps réel, gestion des produits, administration multi-role, et rapports de vente.</p>
-        <div class="projet-tech">
-          <span>Laravel 11</span>
-          <span>Livewire</span>
-          <span>MySQL</span>
-          <span>Tailwind</span>
+        <div class="projet-content">
+          <div class="projet-header">
+            <h3 class="projet-title">Fast-Flow</h3>
+            <span class="projet-badge">Laravel 11</span>
+          </div>
+          <div class="projet-tech">
+            <span class="tech-tag">Laravel 11</span>
+            <span class="tech-tag">Livewire</span>
+            <span class="tech-tag">MySQL</span>
+            <span class="tech-tag">Tailwind</span>
+          </div>
+          <p class="projet-description">Système complet de gestion de fast-food : commandes en temps réel, gestion des produits, administration multi-role, et rapports de vente.</p>
+          <div class="projet-features">
+            <div class="feature-item"><i class="fas fa-cube"></i> Gestion des stocks & alertes</div>
+            <div class="feature-item"><i class="fas fa-chart-line"></i> Tableau de bord analytique</div>
+            <div class="feature-item"><i class="fas fa-users"></i> Admin, manager, équipe</div>
+          </div>
         </div>
-        <ul class="projet-features">
-          <li>Gestion des stocks & alertes</li>
-          <li>Tableau de bord analytique</li>
-          <li>Admin, manager, équipe</li>
-        </ul>
       </div>
 
       <!-- Waiter's Pal (Flutter) -->
-      <div class="projet-card card-hover" data-category="flutter">
-        <div class="projet-header">
-          <i class="fab fa-flutter"></i>
-          <span class="projet-category">Flutter</span>
+      <div class="projet-card-new reverse" data-category="flutter">
+        <div class="projet-visual">
+          <img src="https://i.pinimg.com/736x/13/77/33/137733f2ff5ae9cf8af84985eb9397f7.jpg" alt="Waiter's Pal" loading="lazy">
+          <div class="img-overlay"></div>
         </div>
-        <h3>Waiter's Pal</h3>
-        <p>Application mobile de gestion de restaurant : prise de commande, édition du menu dynamique, suivi d'activité en temps réel pour les serveurs.</p>
-        <div class="projet-tech">
-          <span>Flutter</span>
-          <span>SQLite</span>
+        <div class="projet-content">
+          <div class="projet-header">
+            <h3 class="projet-title">Waiter's Pal</h3>
+            <span class="projet-badge">Flutter</span>
+          </div>
+          <div class="projet-tech">
+            <span class="tech-tag">Flutter</span>
+            <span class="tech-tag">SQLite</span>
+          </div>
+          <p class="projet-description">Application mobile de gestion de restaurant : prise de commande, édition du menu dynamique, suivi d'activité en temps réel pour les serveurs.</p>
+          <div class="projet-features">
+            <div class="feature-item"><i class="fas fa-mobile-alt"></i> Interface tablette & mobile</div>
+            <div class="feature-item"><i class="fas fa-bell"></i> Notifications nouvelles commandes</div>
+          </div>
         </div>
-        <ul class="projet-features">
-          <li>Interface tablette & mobile</li>
-          <li>Notifications nouvelles commandes</li>
-        </ul>
       </div>
 
       <!-- AutoVault (React) -->
-      <div class="projet-card card-hover" data-category="react">
-        <div class="projet-header">
-          <i class="fab fa-react"></i>
-          <span class="projet-category">React</span>
+      <div class="projet-card-new" data-category="react">
+        <div class="projet-visual">
+          <img src="https://i.pinimg.com/1200x/bf/e0/94/bfe094d2747b33c862647b86e4e3f5a1.jpg" alt="AutoVault" loading="lazy">
+          <div class="img-overlay"></div>
         </div>
-        <h3>AutoVault</h3>
-        <p>Plateforme moderne de vente de voitures d'occasion et neuves. Filtres avancés, vue détaillée, comparaison et espace professionnel.</p>
-        <div class="projet-tech">
-          <span>React</span>
-          <span>Node.js</span>
-          <span>MongoDB</span>
+        <div class="projet-content">
+          <div class="projet-header">
+            <h3 class="projet-title">AutoVault</h3>
+            <span class="projet-badge">React</span>
+          </div>
+          <div class="projet-tech">
+            <span class="tech-tag">React</span>
+            <span class="tech-tag">Node.js</span>
+            <span class="tech-tag">MongoDB</span>
+          </div>
+          <p class="projet-description">Plateforme moderne de vente de voitures d'occasion et neuves. Filtres avancés, vue détaillée, comparaison et espace professionnel.</p>
+          <div class="projet-features">
+            <div class="feature-item"><i class="fas fa-sliders-h"></i> Filtres dynamiques (prix, année, marque)</div>
+            <div class="feature-item"><i class="fas fa-heart"></i> Favoris & partage</div>
+          </div>
         </div>
-        <ul class="projet-features">
-          <li>Filtres dynamiques (prix, année, marque)</li>
-          <li>Favoris & partage</li>
-        </ul>
       </div>
 
       <!-- EduCash (PHP) -->
-      <div class="projet-card card-hover" data-category="php">
-        <div class="projet-header">
-          <i class="fab fa-php"></i>
-          <span class="projet-category">PHP 8</span>
+      <div class="projet-card-new reverse" data-category="php">
+        <div class="projet-visual">
+          <img src="https://i.pinimg.com/1200x/db/56/02/db56024feaa6aa51ae625bd8b0b56f43.jpg" alt="EduCash" loading="lazy">
+          <div class="img-overlay"></div>
         </div>
-        <h3>EduCash</h3>
-        <p>Application web pour l'enregistrement et suivi des frais scolaires. Gérez les paiements, impayés, reçus et historiques par élève.</p>
-        <div class="projet-tech">
-          <span>PHP 8</span>
-          <span>MySQL</span>
-          <span>Bootstrap</span>
-          <span>AJAX</span>
+        <div class="projet-content">
+          <div class="projet-header">
+            <h3 class="projet-title">EduCash</h3>
+            <span class="projet-badge">PHP 8</span>
+          </div>
+          <div class="projet-tech">
+            <span class="tech-tag">PHP 8</span>
+            <span class="tech-tag">MySQL</span>
+            <span class="tech-tag">Bootstrap</span>
+            <span class="tech-tag">AJAX</span>
+          </div>
+          <p class="projet-description">Application web pour l'enregistrement et suivi des frais scolaires. Gérez les paiements, impayés, reçus et historiques par élève.</p>
+          <div class="projet-features">
+            <div class="feature-item"><i class="fas fa-file-invoice"></i> Génération de reçus PDF</div>
+            <div class="feature-item"><i class="fas fa-chart-pie"></i> Statistiques par classe</div>
+            <div class="feature-item"><i class="fas fa-user-graduate"></i> Multi-niveaux (écolier, secondaire)</div>
+          </div>
         </div>
-        <ul class="projet-features">
-          <li>Génération de reçus PDF</li>
-          <li>Statistiques par classe</li>
-          <li>Multi-niveaux (écolier, secondaire)</li>
-        </ul>
       </div>
 
       <!-- VoyageAzur (Laravel) -->
-      <div class="projet-card card-hover" data-category="laravel">
-        <div class="projet-header">
-          <i class="fab fa-laravel"></i>
-          <span class="projet-category">Laravel 11</span>
+      <div class="projet-card-new" data-category="laravel">
+        <div class="projet-visual">
+          <img src="https://i.pinimg.com/1200x/6c/a7/c2/6ca7c2906eeacea7823f84682efeabc8.jpg" alt="VoyageAzur" loading="lazy">
+          <div class="img-overlay"></div>
         </div>
-        <h3>VoyageAzur</h3>
-        <p>Plateforme de réservation touristique avec hébergements, circuits, expériences locales. Consultation d'offres et réservation en ligne.</p>
-        <div class="projet-tech">
-          <span>Laravel 11</span>
-          <span>Livewire</span>
-          <span>MySQL</span>
-          <span>Tailwind</span>
+        <div class="projet-content">
+          <div class="projet-header">
+            <h3 class="projet-title">VoyageAzur</h3>
+            <span class="projet-badge">Laravel 11</span>
+          </div>
+          <div class="projet-tech">
+            <span class="tech-tag">Laravel 11</span>
+            <span class="tech-tag">Livewire</span>
+            <span class="tech-tag">MySQL</span>
+            <span class="tech-tag">Tailwind</span>
+          </div>
+          <p class="projet-description">Plateforme de réservation touristique avec hébergements, circuits, expériences locales. Consultation d'offres et réservation en ligne.</p>
+          <div class="projet-features">
+            <div class="feature-item"><i class="fas fa-hotel"></i> Hôtels, appartements, écolodges</div>
+            <div class="feature-item"><i class="fas fa-credit-card"></i> Paiement sécurisé</div>
+          </div>
         </div>
-        <ul class="projet-features">
-          <li>Hôtels, appartements, écolodges</li>
-          <li>Paiement sécurisé</li>
-        </ul>
       </div>
 
-      <!-- Hackathon -->
-      <div class="projet-card card-hover highlight">
-        <div class="projet-header">
-          <i class="fas fa-trophy"></i>
-          <span class="projet-category">Événement</span>
+      <!-- Hackathon SMARTWATTIUA-2025 (Événement - couleur différente) -->
+      <div class="projet-card-new event-card" data-category="event">
+        <div class="projet-visual event-visual">
+          <!-- Zone pour ajouter une image personnalisée -->
+          <img src="images/SMARTWATTIUA2025.jpeg" alt="Hackathon SMARTWATTIUA-2025" style="width:100%; height:100%; object-fit:cover;">
+          <div class="img-overlay"></div>
         </div>
-        <h3>Hackathon SMARTWATTIUA-2025</h3>
-        <p>Membre de l'équipe d'organisation : coordination logistique et participation.</p>
-        <div class="projet-tech">
-          <span>Organisation</span>
-          <span>Teamwork</span>
+        <div class="projet-content">
+          <div class="projet-header">
+            <h3 class="projet-title">Hackathon SMARTWATTIUA-2025</h3>
+            <span class="projet-badge event-badge">Événement</span>
+          </div>
+          <div class="projet-tech">
+            <span class="tech-tag event-tag">Organisation</span>
+            <span class="tech-tag event-tag">Teamwork</span>
+          </div>
+          <p class="projet-description event-description">Membre de l'équipe d'organisation : coordination logistique et participation.</p>
+          <div class="projet-features">
+            <div class="feature-item"><i class="fas fa-users"></i> Coordination d'équipe</div>
+            <div class="feature-item"><i class="fas fa-calendar-check"></i> Logistique événementielle</div>
+            <div class="feature-item"><i class="fas fa-lightbulb"></i> Participation active</div>
+          </div>
         </div>
       </div>
     </div>
@@ -521,9 +547,9 @@
           <i class="fas fa-rocket"></i>
           <h3>Actuellement</h3>
           <ul>
-            <li>→ Engagement associatif étudiant</li>
-            <li>→ Recherche stage développement</li>
-            <li>→ Open to collaborations</li>
+            <li><i class="fas fa-check"></i> Engagement associatif étudiant</li>
+            <li><i class="fas fa-search"></i> Recherche stage développement</li>
+            <li><i class="fas fa-handshake"></i> Open to collaborations</li>
           </ul>
 
           <!-- Bouton CV dans contact -->
